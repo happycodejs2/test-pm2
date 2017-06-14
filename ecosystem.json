@@ -16,9 +16,9 @@
       "user" : "root",
       "host" : ["101.200.50.252"],
       "ref": "origin/master",
-      "repo": "git@git.oschina.net:happycodejs/website-server.git",
+      "repo": "git@github.com:happycodejs2/test-pm2.git",
       "path": "/www/website/production",
-      "ssh_options": "StrictHostKeyChecking=yes",
+      "ssh_options": "StrictHostKeyChecking=no",
       "env": {
         "NODE_ENV": "production"
       }
