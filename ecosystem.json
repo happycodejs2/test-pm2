@@ -1,0 +1,27 @@
+{
+  "apps" : [
+    {
+      "name"      : "Website",
+      "script"    : "app.js",
+      "env": {
+        "COMMON_VARIABLE": "true"
+      },
+      "env_production" : {
+        "NODE_ENV": "production"
+      }
+    }
+  ],
+  "deploy" : {
+    "production" : {
+      "user" : "root",
+      "host" : ["101.200.50.252"],
+      "ref": "origin/master",
+      "repo": "git@git.oschina.net:happycodejs/website-server.git",
+      "path": "/www/website/production",
+      "ssh_options": "StrictHostKeyChecking=yes",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  }
+}
